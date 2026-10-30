@@ -3,84 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Form</title>
+    <meta name="description" content="College events and information">
+    <meta name="author" content="Student">
+    <title>Home - My College Website</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="Week4/style.css">
 </head>
 <body>
 
-    <h2>Registration Form</h2>
+    <header>
+        <h1>My College Website</h1>
+        <p>Welcome to our college</p>
+    </header>
 
-    <form>
-        <!-- Name -->
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <br><br>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="register.html">Register</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
-        <!-- Email -->
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <br><br>
+    <main>
+        <h2>Upcoming Events</h2>
 
-        <!-- Password -->
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        <br><br>
+        <table>
+            <thead>
+                <tr>
+                    <th>Event Name</th>
+                    <th>Date</th>
+                    <th>Venue</th>
+                </tr>
+            </thead>
 
-        <!-- Date -->
-        <label for="date">Date of Birth:</label>
-        <input type="date" id="date" name="date">
-        <br><br>
+            <tbody>
+                <tr>
+                    <td>Freshers Party</td>
+                    <td>10 November 2026</td>
+                    <td>College Auditorium</td>
+                </tr>
+                <tr>
+                    <td>Sports Day</td>
+                    <td>15 November 2026</td>
+                    <td>College Ground</td>
+                </tr>
+                <tr>
+                    <td>Tech Fest</td>
+                    <td>20 November 2026</td>
+                    <td>Computer Lab</td>
+                </tr>
+            </tbody>
 
-        <!-- Phone -->
-        <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone">
-        <br><br>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total Events: 3</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
 
-        <!-- Radio Buttons -->
-        <p>Gender:</p>
-        <input type="radio" id="male" name="gender" value="Male">
-        <label for="male">Male</label>
-
-        <input type="radio" id="female" name="gender" value="Female">
-        <label for="female">Female</label>
-
-        <input type="radio" id="other" name="gender" value="Other">
-        <label for="other">Other</label>
-        <br><br>
-
-        <!-- Checkboxes -->
-        <p>Select Your Hobbies:</p>
-        <input type="checkbox" id="reading" name="hobbies" value="Reading">
-        <label for="reading">Reading</label>
-
-        <input type="checkbox" id="music" name="hobbies" value="Music">
-        <label for="music">Music</label>
-
-        <input type="checkbox" id="sports" name="hobbies" value="Sports">
-        <label for="sports">Sports</label>
-        <br><br>
-
-        <!-- Dropdown -->
-        <label for="course">Select Your Course:</label>
-        <select id="course" name="course">
-            <option value="">--Select Course--</option>
-            <option value="BTech">B.Tech</option>
-            <option value="BCA">BCA</option>
-            <option value="BBA">BBA</option>
-            <option value="MCA">MCA</option>
-        </select>
-        <br><br>
-
-        <!-- Message Box -->
-        <label for="message">Your Message:</label>
-        <br>
-        <textarea id="message" name="message" rows="5" cols="30"
-            placeholder="Enter your message here"></textarea>
-        <br><br>
-
-        <!-- Submit Button -->
-        <button type="submit">Submit</button>
-
-    </form>
+    <footer>
+        <p>&copy; 2026 My College Website</p>
+    </footer>
 
 </body>
 </html>
