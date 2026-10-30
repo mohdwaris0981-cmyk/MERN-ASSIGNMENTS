@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Student registration form">
+    <title>Register - My College Website</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+
+    <header>
+        <h1>Student Registration</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="register.html">Register</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <form action="#" method="post">
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password"
+                   name="password" required>
+
+            <label for="date">Date of Birth:</label>
+            <input type="date" id="date" name="date">
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <p>Gender:</p>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+
+            <p>Choose Your Interests:</p>
+            <input type="checkbox" id="coding" name="interest" value="Coding">
+            <label for="coding">Coding</label>
+
+            <input type="checkbox" id="sports" name="interest" value="Sports">
+            <label for="sports">Sports</label>
+
+            <input type="checkbox" id="music" name="interest" value="Music">
+            <label for="music">Music</label>
+
+            <label for="course">Select Course:</label>
+            <select id="course" name="course">
+                <option value="">-- Select Course --</option>
+                <option value="CSE">Computer Science</option>
+                <option value="EE">Electrical Engineering</option>
+                <option value="ME">Mechanical Engineering</option>
+            </select>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My College Website</p>
+    </footer>
+
+</body>
+</html>
