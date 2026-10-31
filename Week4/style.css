@@ -1,116 +1,174 @@
-/* Universal Selector */
+/* =================================
+   1. Universal Selector
+================================= */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Element Selector */
-h1 {
-    color: darkblue;
-}
 
-/* Class Selector */
-.navigation {
-    background-color: lightblue;
-    padding: 15px;
-}
+/* =================================
+   2. Body - Font and Colours
+================================= */
 
-/* ID Selector */
-#header {
-    text-align: center;
-    background-color: lightgray;
-    padding: 25px;
-}
-
-/* Table Class */
-.event-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-/* Registration Form */
-.registration-form {
-    background-color: white;
-    padding: 25px;
-    border-radius: 10px;
-    max-width: 600px;
-    margin: 20px auto;
-}
-
-/* Form Groups */
-.form-group {
-    margin-bottom: 18px;
-}
-
-/* Input Fields */
-.form-input {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid gray;
-    border-radius: 5px;
-}
-
-/* Submit Button */
-.submit-btn {
-    background-color: darkblue;
-    color: white;
-    padding: 12px 25px;
-    border: none;
-    cursor: pointer;
-}
-
-/* About Content */
-.content {
-    max-width: 900px;
-    margin: 30px auto;
-    padding: 20px;
-}
-
-/* About Section */
-#about-section {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-/* About Paragraph */
-.about-text {
-    font-size: 18px;
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7fb;
+    color: #333333;
+    font-size: 16px;
     line-height: 1.6;
 }
 
-/* Facilities List */
-.facilities-list {
-    padding: 20px 40px;
+
+/* =================================
+   3. Header
+================================= */
+
+.main-header {
+    background-color: #1e3a5f;
+    color: white;
+    text-align: center;
+    padding: 30px;
 }
 
-/* Facility Items */
-.facility-item {
-    margin-bottom: 10px;
+.site-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
 }
 
-/* Contact Page */
-.content {
-    max-width: 900px;
+.tagline {
+    font-size: 16px;
+    color: #dbeafe;
+    line-height: 1.8;
+}
+
+
+/* =================================
+   4. Navigation Bar
+================================= */
+
+.navigation {
+    background-color: #2563eb;
+    padding: 15px;
+    text-align: center;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 15px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #ffdd57;
+}
+
+
+/* =================================
+   5. Main Content
+================================= */
+
+.container {
+    max-width: 1100px;
     margin: 30px auto;
     padding: 20px;
 }
 
-/* Contact Details */
-#contact-details {
+.content-section {
+    margin-bottom: 30px;
+}
+
+.section-title {
+    color: #1e3a5f;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+
+/* =================================
+   6. Hero Section
+================================= */
+
+#hero {
+    background-color: #dbeafe;
+    color: #1e3a5f;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 36px;
+    color: #1e3a5f;
+}
+
+.hero-text {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+/* =================================
+   7. Cards
+================================= */
+
+.card {
     background-color: white;
-    padding: 20px;
+    padding: 25px;
+    margin: 20px 0;
     border-radius: 10px;
 }
 
-.contact-info {
-    font-size: 18px;
-    margin: 15px 0;
+.card-title {
+    color: #2563eb;
+    font-size: 22px;
 }
 
-/* Contact Form */
+.card-text {
+    color: #555555;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* =================================
+   8. About and Contact Content
+================================= */
+
+.content {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.about-text,
+.contact-info {
+    color: #444444;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+.facilities-list {
+    padding-left: 30px;
+    color: #444444;
+    font-size: 16px;
+    line-height: 2;
+}
+
+
+/* =================================
+   9. Registration and Contact Forms
+================================= */
+
+.registration-form,
 .contact-form {
     background-color: white;
     padding: 25px;
@@ -121,18 +179,88 @@ h1 {
     margin-bottom: 18px;
 }
 
+.form-group label,
+.form-label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333333;
+}
+
 .form-input {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
-    border: 1px solid gray;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    border: 1px solid #cccccc;
     border-radius: 5px;
 }
 
-.submit-btn {
-    background-color: darkblue;
+.form-input:focus {
+    outline: 2px solid #2563eb;
+}
+
+.btn {
+    background-color: #2563eb;
     color: white;
     padding: 12px 25px;
     border: none;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
     cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #1e3a8a;
+}
+
+
+/* =================================
+   10. Events Table
+================================= */
+
+.event-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    text-align: center;
+    font-size: 15px;
+}
+
+.event-table th {
+    background-color: #1e3a5f;
+    color: white;
+    font-size: 16px;
+    padding: 12px;
+}
+
+.event-table td {
+    padding: 12px;
+    color: #333333;
+    line-height: 1.6;
+}
+
+.event-table tfoot {
+    background-color: #dbeafe;
+    font-weight: 600;
+}
+
+
+/* =================================
+   11. Footer
+================================= */
+
+.main-footer {
+    background-color: #1e3a5f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-text {
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 1.8;
 }
