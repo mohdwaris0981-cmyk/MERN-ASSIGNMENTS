@@ -4,77 +4,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Student registration form">
+
     <title>Register - My College Website</title>
+
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header>
-        <h1>Student Registration</h1>
+    <!-- Header Section -->
+    <header id="header" class="main-header">
+        <h1 class="site-title">Student Registration</h1>
     </header>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="register.html">Register</a>
-        <a href="contact.html">Contact</a>
+    <!-- Navigation Menu -->
+    <nav id="navbar" class="navigation">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link active" href="register.html">Register</a>
+        <a class="nav-link" href="contact.html">Contact</a>
     </nav>
 
-    <main>
-        <form action="#" method="post">
+    <!-- Main Content -->
+    <main id="main-content" class="container">
 
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required>
+        <!-- Registration Form Section -->
+        <section id="registration-section" class="content-section">
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <h2 class="section-title">Registration Form</h2>
 
-            <label for="password">Password:</label>
-            <input type="password" id="password"
-                   name="password" required>
+            <form id="registration-form" class="registration-form"
+                  action="#" method="post">
 
-            <label for="date">Date of Birth:</label>
-            <input type="date" id="date" name="date">
+                <!-- Personal Information -->
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input class="form-input" type="text"
+                           id="name" name="name" required>
+                </div>
 
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input class="form-input" type="email"
+                           id="email" name="email" required>
+                </div>
 
-            <p>Gender:</p>
-            <input type="radio" id="male" name="gender" value="Male">
-            <label for="male">Male</label>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input class="form-input" type="password"
+                           id="password" name="password" required>
+                </div>
 
-            <input type="radio" id="female" name="gender" value="Female">
-            <label for="female">Female</label>
+                <div class="form-group">
+                    <label for="date">Date of Birth:</label>
+                    <input class="form-input" type="date"
+                           id="date" name="date">
+                </div>
 
-            <p>Choose Your Interests:</p>
-            <input type="checkbox" id="coding" name="interest" value="Coding">
-            <label for="coding">Coding</label>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input class="form-input" type="tel"
+                           id="phone" name="phone">
+                </div>
 
-            <input type="checkbox" id="sports" name="interest" value="Sports">
-            <label for="sports">Sports</label>
+                <!-- Gender Selection -->
+                <div class="form-group">
+                    <p class="form-label">Gender:</p>
 
-            <input type="checkbox" id="music" name="interest" value="Music">
-            <label for="music">Music</label>
+                    <input type="radio" id="male"
+                           name="gender" value="Male">
+                    <label for="male">Male</label>
 
-            <label for="course">Select Course:</label>
-            <select id="course" name="course">
-                <option value="">-- Select Course --</option>
-                <option value="CSE">Computer Science</option>
-                <option value="EE">Electrical Engineering</option>
-                <option value="ME">Mechanical Engineering</option>
-            </select>
+                    <input type="radio" id="female"
+                           name="gender" value="Female">
+                    <label for="female">Female</label>
+                </div>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4"></textarea>
+                <!-- Interests -->
+                <div class="form-group">
+                    <p class="form-label">Choose Your Interests:</p>
 
-            <button type="submit">Submit</button>
+                    <input type="checkbox" id="coding"
+                           name="interest" value="Coding">
+                    <label for="coding">Coding</label>
 
-        </form>
+                    <input type="checkbox" id="sports"
+                           name="interest" value="Sports">
+                    <label for="sports">Sports</label>
+
+                    <input type="checkbox" id="music"
+                           name="interest" value="Music">
+                    <label for="music">Music</label>
+                </div>
+
+                <!-- Course Selection -->
+                <div class="form-group">
+                    <label for="course">Select Course:</label>
+
+                    <select class="form-input" id="course"
+                            name="course">
+
+                        <option value="">-- Select Course --</option>
+                        <option value="CSE">Computer Science</option>
+                        <option value="EE">Electrical Engineering</option>
+                        <option value="ME">Mechanical Engineering</option>
+
+                    </select>
+                </div>
+
+                <!-- Message Box -->
+                <div class="form-group">
+                    <label for="message">Message:</label>
+
+                    <textarea class="form-input" id="message"
+                              name="message" rows="4"></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button class="btn submit-btn" type="submit">
+                    Submit
+                </button>
+
+            </form>
+
+        </section>
+
     </main>
 
-    <footer>
-        <p>&copy; 2026 My College Website</p>
+    <!-- Footer Section -->
+    <footer id="footer" class="main-footer">
+        <p class="footer-text">
+            &copy; 2026 My College Website
+        </p>
     </footer>
 
 </body>
