@@ -5,64 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="College events and information">
     <meta name="author" content="Student">
+
     <title>Home - My College Website</title>
+
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header>
-        <h1>My College Website</h1>
-        <p>Welcome to our college</p>
+    <!-- Header Section -->
+    <header id="header" class="main-header">
+        <h1 class="site-title">My College Website</h1>
+        <p class="tagline">Welcome to our college</p>
     </header>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="register.html">Register</a>
-        <a href="contact.html">Contact</a>
+    <!-- Navigation Menu -->
+    <nav id="navbar" class="navigation">
+        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="register.html">Register</a>
+        <a class="nav-link" href="contact.html">Contact</a>
     </nav>
 
-    <main>
-        <h2>Upcoming Events</h2>
+    <!-- Main Content -->
+    <main id="main-content" class="container">
 
-        <table>
-            <thead>
-                <tr>
-                    <th>Event Name</th>
-                    <th>Date</th>
-                    <th>Venue</th>
-                </tr>
-            </thead>
+        <section id="events-section" class="content-section">
 
-            <tbody>
-                <tr>
-                    <td>Freshers Party</td>
-                    <td>10 November 2026</td>
-                    <td>College Auditorium</td>
-                </tr>
-                <tr>
-                    <td>Sports Day</td>
-                    <td>15 November 2026</td>
-                    <td>College Ground</td>
-                </tr>
-                <tr>
-                    <td>Tech Fest</td>
-                    <td>20 November 2026</td>
-                    <td>Computer Lab</td>
-                </tr>
-            </tbody>
+            <h2 class="section-title">Upcoming Events</h2>
 
-            <tfoot>
-                <tr>
-                    <td colspan="3">Total Events: 3</td>
-                </tr>
-            </tfoot>
-        </table>
+            <!-- Events Table -->
+            <table id="events-table" class="event-table">
+
+                <thead class="table-header">
+                    <tr>
+                        <th>Event Name</th>
+                        <th>Date</th>
+                        <th>Venue</th>
+                    </tr>
+                </thead>
+
+                <tbody class="table-body">
+                    <tr class="event-row">
+                        <td>Freshers Party</td>
+                        <td>10 November 2026</td>
+                        <td>College Auditorium</td>
+                    </tr>
+
+                    <tr class="event-row">
+                        <td>Sports Day</td>
+                        <td>15 November 2026</td>
+                        <td>College Ground</td>
+                    </tr>
+
+                    <tr class="event-row">
+                        <td>Tech Fest</td>
+                        <td>20 November 2026</td>
+                        <td>Computer Lab</td>
+                    </tr>
+                </tbody>
+
+                <tfoot class="table-footer">
+                    <tr>
+                        <td colspan="3">Total Events: 3</td>
+                    </tr>
+                </tfoot>
+
+            </table>
+
+        </section>
+
     </main>
 
-    <footer>
-        <p>&copy; 2026 My College Website</p>
+    <!-- Footer Section -->
+    <footer id="footer" class="main-footer">
+        <p class="footer-text">
+            &copy; 2026 My College Website
+        </p>
     </footer>
 
 </body>
