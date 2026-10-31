@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bio Box with Scroll</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 40px;
+    }
+
+    .cards {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .card {
+      width: 260px;
+      padding: 24px;
+      border: 3px solid #555;
+      border-radius: 16px;
+      background: #ffffff;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .avatar {
+      width: 96px;
+      height: 96px;
+      margin: 0 auto 16px;
+      border-radius: 50%;
+      border: 4px solid #555;
+      background: #cfcfcf;
+      color: #333;
+      font-size: 32px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .card h2 { margin: 0 0 6px; font-size: 22px; color: #333; }
+    .card .role { margin: 0 0 14px; font-size: 15px; color: #666; }
+
+    /* ---------- 6.3: bio box with fixed height + scroll ---------- */
+    .bio {
+      height: 110px;               /* fixed height */
+      overflow: auto;              /* scrollbar appears only when text is too long */
+      padding: 10px;
+      border: 1px solid #aaa;
+      border-radius: 8px;
+      background: #fafafa;
+      text-align: left;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #444;
+    }
+    .bio p { margin: 0; }
+
+    /* ---------- Colour versions ---------- */
+    .card.blue { background: #e3efff; border-color: #1e5fd1; }
+    .card.blue .avatar { background: #1e5fd1; border-color: #0f3f94; color: #fff; }
+    .card.blue h2 { color: #0f3f94; }
+    .card.blue .bio { border-color: #1e5fd1; background: #f5f9ff; }
+
+    .card.green { background: #e4f6e8; border-color: #1f8a3b; }
+    .card.green .avatar { background: #1f8a3b; border-color: #136127; color: #fff; }
+    .card.green h2 { color: #136127; }
+    .card.green .bio { border-color: #1f8a3b; background: #f4fbf6; }
+  </style>
+</head>
+<body>
+  <div class="cards">
+
+    <div class="card">
+      <div class="avatar">MW</div>
+      <h2>Mohammad Waris</h2>
+      <p class="role">Web Development Student</p>
+      <div class="bio">
+        <p>
+          I am a first-year student learning web development. So far I have built
+          pages with HTML and styled them with CSS, including forms, navigation
+          and now the box model. I enjoy turning a plain page into something that
+          looks clean and works well on different screens. My goal is to learn
+          JavaScript next and build small interactive projects, then move on to
+          full websites. In my free time I like exploring new tools and
+          practising what I learn in class.
+        </p>
+      </div>
+    </div>
+
+    <div class="card blue">
+      <div class="avatar">MW</div>
+      <h2>Mohammad Waris</h2>
+      <p class="role">Web Development Student</p>
+      <div class="bio">
+        <p>
+          I am a first-year student learning web development. So far I have built
+          pages with HTML and styled them with CSS, including forms, navigation
+          and now the box model. I enjoy turning a plain page into something that
+          looks clean and works well on different screens. My goal is to learn
+          JavaScript next and build small interactive projects, then move on to
+          full websites. In my free time I like exploring new tools and
+          practising what I learn in class.
+        </p>
+      </div>
+    </div>
+
+    <div class="card green">
+      <div class="avatar">MW</div>
+      <h2>Mohammad Waris</h2>
+      <p class="role">Web Development Student</p>
+      <div class="bio">
+        <p>
+          I am a first-year student learning web development. So far I have built
+          pages with HTML and styled them with CSS, including forms, navigation
+          and now the box model. I enjoy turning a plain page into something that
+          looks clean and works well on different screens. My goal is to learn
+          JavaScript next and build small interactive projects, then move on to
+          full websites. In my free time I like exploring new tools and
+          practising what I learn in class.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
