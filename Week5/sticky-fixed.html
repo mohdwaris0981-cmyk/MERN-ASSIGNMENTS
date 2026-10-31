@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>6.4 Sticky Top Bar and Fixed Button</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+    }
+
+    /* ---------- Sticky top bar ---------- */
+    .topbar {
+      position: sticky;      /* scrolls normally, then sticks at top: 0 */
+      top: 0;
+      z-index: 100;          /* stays above the cards */
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 24px;
+      background: #1e5fd1;
+      color: #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    }
+    .topbar h1 { margin: 0; font-size: 20px; }
+    .topbar nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 15px;
+    }
+
+    /* ---------- Page content (long enough to scroll) ---------- */
+    .content {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    .card {
+      padding: 20px;
+      margin-bottom: 20px;
+      border: 3px solid #555;
+      border-radius: 16px;
+      background: #fff;
+      position: relative;    /* so z-index applies to cards */
+      z-index: 1;            /* lower than the bar (100) and button (200) */
+    }
+    .card h2 { margin: 0 0 8px; font-size: 20px; }
+    .card p  { margin: 0; color: #555; line-height: 1.5; }
+
+    /* ---------- Fixed + button ---------- */
+    .fab {
+      position: fixed;       /* stays in place while scrolling */
+      right: 24px;
+      bottom: 24px;
+      z-index: 200;          /* above the top bar and cards */
+      width: 56px;
+      height: 56px;
+      border: none;
+      border-radius: 50%;
+      background: #1f8a3b;
+      color: #fff;
+      font-size: 32px;
+      line-height: 1;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    .fab:hover { background: #136127; }
+  </style>
+</head>
+<body>
+
+  <header class="topbar">
+    <h1>My Cards</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <div class="card"><h2>Card 1</h2><p>Scroll down. The blue top bar stays at the top and the + button stays at the bottom right.</p></div>
+    <div class="card"><h2>Card 2</h2><p>The top bar is sticky, so it scrolls normally until it reaches the top of the screen and then sticks there.</p></div>
+    <div class="card"><h2>Card 3</h2><p>The + button is fixed, so it is positioned relative to the browser window and never moves.</p></div>
+    <div class="card"><h2>Card 4</h2><p>z-index decides who sits on top: cards are 1, the top bar is 100 and the button is 200.</p></div>
+    <div class="card"><h2>Card 5</h2><p>Try removing z-index from .topbar and watch the cards slide over the bar as you scroll.</p></div>
+    <div class="card"><h2>Card 6</h2><p>Sticky keeps its place in the page layout. Fixed is taken out of the layout completely.</p></div>
+    <div class="card"><h2>Card 7</h2><p>More content so the page is long enough to scroll.</p></div>
+    <div class="card"><h2>Card 8</h2><p>More content so the page is long enough to scroll.</p></div>
+    <div class="card"><h2>Card 9</h2><p>More content so the page is long enough to scroll.</p></div>
+    <div class="card"><h2>Card 10</h2><p>End of the page.</p></div>
+  </main>
+
+  <button class="fab" aria-label="Add">+</button>
+
+</body>
+</html>
