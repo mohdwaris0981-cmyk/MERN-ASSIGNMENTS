@@ -4,51 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contact our college">
+
     <title>Contact - My College Website</title>
+
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header>
-        <h1>Contact Us</h1>
+    <!-- Header Section -->
+    <header id="header" class="main-header">
+        <h1 class="site-title">Contact Us</h1>
     </header>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="register.html">Register</a>
-        <a href="contact.html">Contact</a>
+    <!-- Navigation Menu -->
+    <nav id="navbar" class="navigation">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="register.html">Register</a>
+        <a class="nav-link active" href="contact.html">Contact</a>
     </nav>
 
-    <main>
-        <div class="content">
-            <h2>Get in Touch</h2>
-            <p>Email: college@example.com</p>
-            <p>Phone: 9876543210</p>
-            <p>Address: Bareilly, Uttar Pradesh, India</p>
+    <!-- Main Content -->
+    <main id="main-content" class="container">
 
-            <h3>Send Us a Message</h3>
-            <form action="#" method="post">
-                <label for="contact-name">Name:</label>
-                <input type="text" id="contact-name"
-                       name="name" required>
+        <div id="contact-content" class="content">
 
-                <label for="contact-email">Email:</label>
-                <input type="email" id="contact-email"
-                       name="email" required>
+            <!-- Contact Details Section -->
+            <section id="contact-details" class="content-section">
 
-                <label for="contact-message">Message:</label>
-                <textarea id="contact-message"
-                          name="message" rows="4" required></textarea>
+                <h2 class="section-title">Get in Touch</h2>
 
-                <button type="submit">Send Message</button>
-            </form>
+                <p class="contact-info">
+                    Email: college@example.com
+                </p>
+
+                <p class="contact-info">
+                    Phone: 9876543210
+                </p>
+
+                <p class="contact-info">
+                    Address: Bareilly, Uttar Pradesh, India
+                </p>
+
+            </section>
+
+            <!-- Contact Form Section -->
+            <section id="message-section" class="content-section">
+
+                <h3 class="section-title">Send Us a Message</h3>
+
+                <form id="contact-form" class="contact-form"
+                      action="#" method="post">
+
+                    <div class="form-group">
+                        <label for="contact-name">Name:</label>
+
+                        <input class="form-input"
+                               type="text"
+                               id="contact-name"
+                               name="name"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-email">Email:</label>
+
+                        <input class="form-input"
+                               type="email"
+                               id="contact-email"
+                               name="email"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-message">Message:</label>
+
+                        <textarea class="form-input"
+                                  id="contact-message"
+                                  name="message"
+                                  rows="4"
+                                  required></textarea>
+                    </div>
+
+                    <button class="btn submit-btn" type="submit">
+                        Send Message
+                    </button>
+
+                </form>
+
+            </section>
+
         </div>
+
     </main>
 
-    <footer>
-        <p>&copy; 2026 My College Website</p>
+    <!-- Footer Section -->
+    <footer id="footer" class="main-footer">
+        <p class="footer-text">
+            &copy; 2026 My College Website
+        </p>
     </footer>
 
 </body>
