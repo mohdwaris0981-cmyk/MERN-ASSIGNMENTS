@@ -4,41 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="About our college">
+
     <title>About - My College Website</title>
+
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header>
-        <h1>About Our College</h1>
+    <!-- Header Section -->
+    <header id="header" class="main-header">
+        <h1 class="site-title">About Our College</h1>
     </header>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="register.html">Register</a>
-        <a href="contact.html">Contact</a>
+    <!-- Navigation Menu -->
+    <nav id="navbar" class="navigation">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link active" href="about.html">About</a>
+        <a class="nav-link" href="register.html">Register</a>
+        <a class="nav-link" href="contact.html">Contact</a>
     </nav>
 
-    <main>
-        <div class="content">
-            <h2>Who We Are</h2>
-            <p>Our college provides quality education and
-            encourages students to develop technical skills.</p>
+    <!-- Main Content -->
+    <main id="main-content" class="container">
 
-            <h3>Our Facilities</h3>
-            <ul>
-                <li>Library</li>
-                <li>Computer Laboratory</li>
-                <li>Sports Ground</li>
-                <li>Auditorium</li>
-            </ul>
+        <div id="about-content" class="content">
+
+            <section id="about-section" class="content-section">
+
+                <h2 class="section-title">Who We Are</h2>
+
+                <p class="about-text">
+                    Our college provides quality education and
+                    encourages students to develop technical skills.
+                </p>
+
+            </section>
+
+            <!-- Facilities Section -->
+            <section id="facilities-section" class="content-section">
+
+                <h3 class="section-title">Our Facilities</h3>
+
+                <ul id="facilities-list" class="facilities-list">
+                    <li class="facility-item">Library</li>
+                    <li class="facility-item">Computer Laboratory</li>
+                    <li class="facility-item">Sports Ground</li>
+                    <li class="facility-item">Auditorium</li>
+                </ul>
+
+            </section>
+
         </div>
+
     </main>
 
-    <footer>
-        <p>&copy; 2026 My College Website</p>
+    <!-- Footer Section -->
+    <footer id="footer" class="main-footer">
+        <p class="footer-text">
+            &copy; 2026 My College Website
+        </p>
     </footer>
 
 </body>
