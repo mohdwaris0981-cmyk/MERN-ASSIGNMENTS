@@ -1,4 +1,138 @@
-body {
-    background-color: black;
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Element Selector */
+h1 {
+    color: darkblue;
+}
+
+/* Class Selector */
+.navigation {
+    background-color: lightblue;
+    padding: 15px;
+}
+
+/* ID Selector */
+#header {
+    text-align: center;
+    background-color: lightgray;
+    padding: 25px;
+}
+
+/* Table Class */
+.event-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Registration Form */
+.registration-form {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+/* Form Groups */
+.form-group {
+    margin-bottom: 18px;
+}
+
+/* Input Fields */
+.form-input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+/* Submit Button */
+.submit-btn {
+    background-color: darkblue;
     color: white;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+}
+
+/* About Content */
+.content {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* About Section */
+#about-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* About Paragraph */
+.about-text {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Facilities List */
+.facilities-list {
+    padding: 20px 40px;
+}
+
+/* Facility Items */
+.facility-item {
+    margin-bottom: 10px;
+}
+
+/* Contact Page */
+.content {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* Contact Details */
+#contact-details {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-info {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+/* Contact Form */
+.contact-form {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.submit-btn {
+    background-color: darkblue;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
 }
