@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Box Model Practice</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body { font-family: sans-serif; padding: 40px; }
+
+    .box {
+      width: 300px;          /* total width INCLUDING padding + border */
+      height: 150px;
+      padding: 20px;
+      border: 10px solid #2a6fdb;
+      margin: 30px;
+      background: #dbe8ff;
+    }
+
+    .box.second {
+      padding: 40px 10px;    /* vertical | horizontal */
+      border-width: 4px 12px;
+      margin: 10px 60px;
+      background: #ffe3c2;
+      border-color: #d9701a;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">Box 1: border-box</div>
+  <div class="box second">Box 2: different padding, border, margin</div>
+</body>
+</html>
