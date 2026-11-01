@@ -1,0 +1,4 @@
+Why I chose these colours
+1.	I used navy (#1e3a5f) for the header, footer and table headings because it looks professional and trustworthy, and white text on it is easy to read.
+2.	I used a brighter blue (#2563eb) for the menu, buttons and card titles so that clickable and important items stand out from the rest of the page.
+3.	I used light blue and a soft off-white background with a yellow hover colour, so the page feels calm and readable, with enough contrast to show which menu link is active.
