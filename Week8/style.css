@@ -5,7 +5,6 @@
     box-sizing: border-box;
 }
 
-/* Root font size */
 html {
     font-size: 16px;
 }
@@ -24,56 +23,97 @@ header {
     padding: 1.5rem;
 }
 
-h1 {
-    font-size: 2rem;
+/* Navbar using Flexbox */
+.navbar {
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
 }
 
-header p {
-    font-size: 1rem;
+.logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
-/* Main section */
-main {
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main layout using Grid */
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
     padding: 1rem;
 }
 
-.container {
+/* About section */
+.about {
     background-color: white;
     padding: 1.5rem;
-    margin-bottom: 1.5rem;
     border-radius: 0.5rem;
 }
 
+/* Responsive image */
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+}
+
+/* Courses section */
+.courses {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.card {
+    background-color: lightblue;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: lightyellow;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+/* Headings */
 h2 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 
 h3 {
-    font-size: 1.25rem;
-    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
 }
 
 p {
     font-size: 1rem;
     line-height: 1.6;
-}
-
-/* Responsive images */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 0.5rem;
-    margin-bottom: 1rem;
-}
-
-/* Cards */
-.card {
-    background-color: lightblue;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 0.5rem;
 }
 
 /* Footer */
@@ -82,45 +122,69 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem;
-    font-size: 0.9rem;
 }
 
-/* Tablet screen */
+/* TABLET: 768px */
 @media screen and (min-width: 768px) {
 
-    main {
+    /* Navbar Flexbox */
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav-links {
+        flex-direction: row;
+    }
+
+    /* Main Grid */
+    .container {
+        grid-template-columns: 2fr 1fr;
         padding: 2rem;
     }
 
-    .card {
-        display: inline-block;
-        width: 48%;
-        vertical-align: top;
+    .about {
+        grid-column: 1 / 3;
     }
 
-    h1 {
-        font-size: 2.5rem;
+    .courses {
+        grid-column: 1;
+    }
+
+    .sidebar {
+        grid-column: 2;
+    }
+
+    /* Course cards */
+    .course-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-/* Desktop screen */
+/* DESKTOP: 1024px */
 @media screen and (min-width: 1024px) {
 
-    main {
+    .container {
         max-width: 1200px;
         margin: auto;
+        grid-template-columns: 2fr 1fr;
+        gap: 1.5rem;
     }
 
-    .card {
-        width: 48%;
-        margin: 0.5%;
+    .about {
+        grid-column: 1;
     }
 
-    h1 {
-        font-size: 3rem;
+    .courses {
+        grid-column: 1;
     }
 
-    h2 {
-        font-size: 2rem;
+    .sidebar {
+        grid-column: 2;
+        grid-row: 1 / 3;
+    }
+
+    .course-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
