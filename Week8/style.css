@@ -1,0 +1,115 @@
+/* Common styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* Header */
+header {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Navigation */
+nav {
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+}
+
+/* Main content */
+main {
+    padding: 15px;
+}
+
+.content {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card {
+    background-color: lightblue;
+    padding: 25px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* TABLET: 768px and above */
+@media screen and (min-width: 768px) {
+
+    nav {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        flex: 1 1 200px;
+    }
+
+    main {
+        padding: 25px;
+    }
+}
+
+/* DESKTOP: 1024px and above */
+@media screen and (min-width: 1024px) {
+
+    header {
+        padding: 30px;
+    }
+
+    main {
+        max-width: 1200px;
+        margin: auto;
+        padding: 30px;
+    }
+
+    .content {
+        padding: 35px;
+    }
+
+    .cards {
+        gap: 25px;
+    }
+
+    .card {
+        padding: 40px;
+    }
+}
