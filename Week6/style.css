@@ -98,3 +98,57 @@
     cursor: pointer;
 }
 
+
+/* Cards Section */
+.cards-section {
+    padding: 40px;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.cards-section h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+/* Card Container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Individual Cards */
+.card {
+    flex: 1 1 200px;
+
+    background-color: white;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    color: #2874A6;
+    margin-bottom: 15px;
+}
+
+.card p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.card button {
+    background-color: #2874A6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #154360;
+}
