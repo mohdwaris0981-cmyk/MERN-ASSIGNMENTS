@@ -3,49 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Images and Fonts</title>
+    <title>Grid and Flexbox Layout</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Header -->
     <header>
         <h1>My College Website</h1>
-        <p>Welcome to Our College</p>
     </header>
 
-    <main>
+    <!-- Navbar using Flexbox -->
+    <nav class="navbar">
+        <div class="logo">MyCollege</div>
 
-        <section class="container">
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Courses</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Main Page using Grid -->
+    <main class="container">
+
+        <section class="about">
             <h2>About Our College</h2>
-
-            <img src="college.jpg" alt="College Building">
-
             <p>
                 Our college provides quality education,
-                modern facilities and practical knowledge
-                to students.
+                practical knowledge and modern facilities.
             </p>
+            <img src="college.jpg" alt="College Building">
         </section>
 
-        <section class="container">
+        <section class="courses">
             <h2>Our Courses</h2>
 
-            <div class="card">
-                <img src="computer.jpg" alt="Computer Science">
-                <h3>Computer Science</h3>
-                <p>Learn programming and technology.</p>
-            </div>
+            <div class="course-grid">
+                <div class="card">
+                    <h3>Computer Science</h3>
+                    <p>Learn programming and technology.</p>
+                </div>
 
-            <div class="card">
-                <img src="engineering.jpg" alt="Engineering">
-                <h3>Engineering</h3>
-                <p>Develop technical and practical skills.</p>
-            </div>
+                <div class="card">
+                    <h3>Mechanical</h3>
+                    <p>Learn machines and engineering.</p>
+                </div>
 
+                <div class="card">
+                    <h3>Electrical</h3>
+                    <p>Learn electrical systems.</p>
+                </div>
+            </div>
         </section>
+
+        <aside class="sidebar">
+            <h2>Latest News</h2>
+            <p>Admissions are open for 2026.</p>
+            <p>Upcoming college events.</p>
+        </aside>
 
     </main>
 
+    <!-- Footer -->
     <footer>
         <p>© 2026 My College Website</p>
     </footer>
